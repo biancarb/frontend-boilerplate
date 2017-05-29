@@ -52,6 +52,13 @@ jspm_packages
 .env
 
 
+
+#### Yarn ####
+
+yarn.lock
+
+
+
 #### IntelliJ ####
 
 .idea/
