@@ -1,2 +1,11 @@
 @import
-'base/reset';
+'utils/variables',
+'utils/mixins';
+
+@import
+'base/reset',
+'base/fonts';
+
+@import
+'layout/header',
+'layout/footer';
