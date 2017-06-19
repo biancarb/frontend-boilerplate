@@ -1,3 +1,4 @@
+const paths = require('../paths')
 const gulp = require('gulp')
 const plumber = require('gulp-plumber')
 const pug = require('gulp-pug')
@@ -6,10 +7,10 @@ const browsersync = require('browser-sync')
 
 gulp.task('views', () => {
     gulp
-		.src('./src/views/**/*.pug')
+		.src(paths.views.src)
 		.pipe(plumber())
 		.pipe(pug())
         .pipe(htmlmin({ collapseWhitespace: true }))
-        .pipe(gulp.dest('./dist/views'))
+        .pipe(gulp.dest(paths.views.dest))
 		.pipe(browsersync.reload({ stream: true }))
 })

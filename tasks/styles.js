@@ -1,3 +1,4 @@
+const paths = require('../paths')
 const gulp = require('gulp')
 const plumber = require('gulp-plumber')
 const sass = require('gulp-sass')
@@ -7,11 +8,11 @@ const browsersync = require('browser-sync')
 
 gulp.task('styles', () => {
 	gulp
-		.src('./src/styles/main.scss')
+		.src(paths.styles.main)
 		.pipe(plumber())
 		.pipe(sass())
 		.pipe(autoprefixer('last 10 versions'))
 		.pipe(cssnano())
-		.pipe(gulp.dest('./dist/styles'))
+		.pipe(gulp.dest(paths.styles.dest))
 		.pipe(browsersync.reload({ stream: true }))
 })
