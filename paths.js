@@ -1,24 +1,24 @@
 module.exports = {
 	views: {
-		src: './src/views/**/*.pug',
-		dest: './dist/views'
+		src: './source/views/**/*.pug',
+		dest: './assets/views'
 	},
 	styles: {
-		main: './src/styles/main.scss',
-		src: './src/styles/**/*.scss',
-		dest: './dist/styles'
+		main: './source/styles/main.scss',
+		src: './source/styles/**/*.scss',
+		dest: './assets/styles'
 	},
 	scripts: {
-		main: './src/scripts/main.js',
-		src: './src/scripts/**/*.js',
-		dest: './dist/scripts'
+		main: './source/scripts/main.js',
+		src: './source/scripts/**/*.js',
+		dest: './assets/scripts'
 	},
 	images: {
-		src: './src/images/**/*',
-		dest: './dist/images'
+		src: './source/images/**/*',
+		dest: './assets/images'
 	},
 	sprites: {
-		src: './src/sprites/**/*.svg',
-		dest: './dist/sprites'
+		src: './source/sprites/**/*.svg',
+		dest: './assets/sprites'
 	}
 }
