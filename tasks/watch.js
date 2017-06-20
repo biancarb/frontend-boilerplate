@@ -8,5 +8,6 @@ gulp.task('watch', ['build', 'browsersync'], () => {
 	gulp.watch(paths.scripts.src, ['scripts'])
 	gulp.watch(paths.images.src, ['images'])
 	gulp.watch(paths.sprites.src, ['sprites'])
+	
 	gulp.watch(paths.sprites.src).on('change', browsersync.reload)
 })
