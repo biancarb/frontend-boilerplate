@@ -4,8 +4,8 @@ const browsersync = require('browser-sync')
 gulp.task('browsersync', () => {
 	browsersync.init({
 		server: {
-			baseDir: './assets',
-			index: './views/index.html'
+			baseDir: './',
+			index: './index.html'
 		} 
 	})
 })

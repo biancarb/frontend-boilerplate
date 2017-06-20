@@ -1,5 +1,6 @@
 module.exports = {
 	views: {
+		main: 'source/views/index.pug',
 		src: 'source/views/**/*.pug',
 		dest: 'assets/views'
 	},
