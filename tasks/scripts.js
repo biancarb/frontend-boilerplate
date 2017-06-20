@@ -11,7 +11,7 @@ const browsersync = require('browser-sync')
 gulp.task('scripts', () => {
 	browserify(paths.scripts.main, { debug: true })
 		.transform(babelify, {
-			presets: ["latest"],
+			presets: ['latest'],
 			sourceMaps: true
 		})
 		.bundle()

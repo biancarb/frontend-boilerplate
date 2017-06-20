@@ -6,11 +6,11 @@ const htmlmin = require('gulp-htmlmin')
 const browsersync = require('browser-sync')
 
 gulp.task('views', () => {
-    gulp
+	gulp
 		.src(paths.views.src)
 		.pipe(plumber())
 		.pipe(pug())
-        .pipe(htmlmin({ collapseWhitespace: true }))
-        .pipe(gulp.dest(paths.views.dest))
+		.pipe(htmlmin({ collapseWhitespace: true }))
+		.pipe(gulp.dest(paths.views.dest))
 		.pipe(browsersync.reload({ stream: true }))
 })
